@@ -1,3 +1,7 @@
 rhel-9.6-x86_64-kvm.qcow2 filter=lfs diff=lfs merge=lfs -text
 suse_15_sp5_amd_64.qcow2 filter=lfs diff=lfs merge=lfs -text
 suse_15_sp6_amd_64.qcow2 filter=lfs diff=lfs merge=lfs -text
+rhel-8.10-x86_64-kvm.qcow2 filter=lfs diff=lfs merge=lfs -text
+rhel-9.8-x86_64-kvm.qcow2 filter=lfs diff=lfs merge=lfs -text
+suse_12_sp4_amd_64.qcow2 filter=lfs diff=lfs merge=lfs -text
+suse_12_sp5_amd_64.qcow2 filter=lfs diff=lfs merge=lfs -text

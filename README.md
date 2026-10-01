@@ -12,9 +12,13 @@ The primary objective of this repository is to make these images easily accessib
 
 | Operating System | Version | Image Format | OS Variant |
 |---|---|---|---|
+| Red Hat Enterprise Linux | RHEL 9.8 | QCOW2 | `rhel9-unknown` |
 | Red Hat Enterprise Linux | RHEL 9.6 | QCOW2 | `rhel9.6` |
+| Red Hat Enterprise Linux | RHEL 8.10 | QCOW2 | `rhel8.10` |
 | SUSE Linux Enterprise Server | SLES 15 SP5 | QCOW2 | `opensuse15.5` |
 | SUSE Linux Enterprise Server | SLES 15 SP6 | QCOW2 | `opensuse15.6` |
+| SUSE Linux Enterprise Server | SLES 12 SP4 | QCOW2 | `opensuse42.3/sled12sp4` |
+| SUSE Linux Enterprise Server | SLES 12 SP5 | QCOW2 | `opensuse42.3/sled12sp5` |
 
 ### What are these images?
 
@@ -26,9 +30,14 @@ These images can be used as the base disks for creating virtual machines. Instea
 
 The OS variant identifies the guest operating system and version to the virtualization platform. When creating a VM in Kloudust, select the exact variant corresponding to the image:
 
+- RHEL 9.8 → `rhel9-unknown`
 - RHEL 9.6 → `rhel9.6`
+- RHEL 8.10 → `rhel8.10`
 - SLES 15 SP5 → `opensuse15.5`
 - SLES 15 SP6 → `opensuse15.6`
+- SLES 12 SP4 → `opensuse42.3/sled12sp4`
+- SLES 12 SP5 → `opensuse42.3/sled12sp5`
+
 
 **Important:** The OS variant is a configuration value used during VM creation. It does not convert one operating system version into another.
 

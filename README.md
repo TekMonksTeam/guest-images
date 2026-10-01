@@ -17,8 +17,11 @@ The primary objective of this repository is to make these images easily accessib
 | Red Hat Enterprise Linux | RHEL 8.10 | QCOW2 | `rhel8.10` |
 | SUSE Linux Enterprise Server | SLES 15 SP5 | QCOW2 | `opensuse15.5` |
 | SUSE Linux Enterprise Server | SLES 15 SP6 | QCOW2 | `opensuse15.6` |
-| SUSE Linux Enterprise Server | SLES 12 SP4 | QCOW2 | `opensuse42.3/sled12sp4` |
-| SUSE Linux Enterprise Server | SLES 12 SP5 | QCOW2 | `opensuse42.3/sled12sp5` |
+| SUSE Linux Enterprise Server | SLES 12 SP4 | QCOW2 | `opensuse42.3/sles12sp4` |
+| SUSE Linux Enterprise Server | SLES 12 SP5 | QCOW2 | `opensuse42.3/sles12sp5` |
+| Ubuntu Server | Ubuntu 20.04 LTS | IMG | `ubuntu20.04/ubuntufocal` |
+| Ubuntu Server | Ubuntu 22.04 LTS | IMG | `ubuntu22.04/ubuntujammy` |
+| Ubuntu Server | Ubuntu 24.04 LTS | IMG | `ubuntu24.04/ubuntunoble` |
 
 ### What are these images?
 
@@ -35,8 +38,11 @@ The OS variant identifies the guest operating system and version to the virtuali
 - RHEL 8.10 → `rhel8.10`
 - SLES 15 SP5 → `opensuse15.5`
 - SLES 15 SP6 → `opensuse15.6`
-- SLES 12 SP4 → `opensuse42.3/sled12sp4`
-- SLES 12 SP5 → `opensuse42.3/sled12sp5`
+- SLES 12 SP4 → `opensuse42.3/sles12sp4`
+- SLES 12 SP5 → `opensuse42.3/sles12sp5`
+- Ubuntu 20.04 LTS  → `ubuntu20.04/ubuntufocal`
+- Ubuntu 22.04 LTS  → `ubuntu22.04/ubuntujammy`
+- Ubuntu 24.04 LTS  → `ubuntu24.04/ubuntunoble`
 
 
 **Important:** The OS variant is a configuration value used during VM creation. It does not convert one operating system version into another.

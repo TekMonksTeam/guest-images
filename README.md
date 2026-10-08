@@ -22,6 +22,7 @@ The primary objective of this repository is to make these images easily accessib
 | Ubuntu Server | Ubuntu 20.04 LTS | IMG | `ubuntu20.04/ubuntufocal` |
 | Ubuntu Server | Ubuntu 22.04 LTS | IMG | `ubuntu22.04/ubuntujammy` |
 | Ubuntu Server | Ubuntu 24.04 LTS | IMG | `ubuntu24.04/ubuntunoble` |
+| Oracle Linux | Oracle Linux 8.10 | QCOW2 | `ol8.10` |
 
 ### What are these images?
 
@@ -43,6 +44,7 @@ The OS variant identifies the guest operating system and version to the virtuali
 - Ubuntu 20.04 LTS  → `ubuntu20.04/ubuntufocal`
 - Ubuntu 22.04 LTS  → `ubuntu22.04/ubuntujammy`
 - Ubuntu 24.04 LTS  → `ubuntu24.04/ubuntunoble`
+- Oracle Linux 8.10  → `ol8.10`
 
 
 **Important:** The OS variant is a configuration value used during VM creation. It does not convert one operating system version into another.

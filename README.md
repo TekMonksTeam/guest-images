@@ -14,6 +14,7 @@ The primary objective of this repository is to make these images easily accessib
 |---|---|---|---|
 | Red Hat Enterprise Linux | RHEL 9.8 | QCOW2 | `rhel9-unknown` |
 | Red Hat Enterprise Linux | RHEL 9.6 | QCOW2 | `rhel9.6` |
+| Red Hat Enterprise Linux | RHEL 9.6 (Kloudust golden) | QCOW2 | `rhel9.6` |
 | Red Hat Enterprise Linux | RHEL 8.10 | QCOW2 | `rhel8.10` |
 | SUSE Linux Enterprise Server | SLES 15 SP5 | QCOW2 | `opensuse15.5` |
 | SUSE Linux Enterprise Server | SLES 15 SP6 | QCOW2 | `opensuse15.6` |
@@ -36,6 +37,7 @@ The OS variant identifies the guest operating system and version to the virtuali
 
 - RHEL 9.8 → `rhel9-unknown`
 - RHEL 9.6 → `rhel9.6`
+- RHEL 9.6 (Kloudust golden) → `rhel9.6`
 - RHEL 8.10 → `rhel8.10`
 - SLES 15 SP5 → `opensuse15.5`
 - SLES 15 SP6 → `opensuse15.6`
@@ -118,6 +120,12 @@ git lfs pull
 
 This downloads the Git LFS objects for the currently checked-out revision.
 
+To download a single image instead of all of them:
+
+```bash
+git lfs pull --include="rhel-9.6-x86_64-golden.qcow2"
+```
+
 To check which files are managed by Git LFS:
 
 ```bash
@@ -164,6 +172,8 @@ Once you have downloaded the required QCOW2 image, follow these steps to create 
   - **SUSE:** https://www.suse.com/
 
 - **👤 Creating Your VM User:** Once your VM is running, follow the guest OS setup process to create your own username and password. Your Red Hat or SUSE account is used for vendor services and subscriptions; it does not automatically become your VM's login account.
+
+- **🖥️ RHEL 9.6 (Kloudust golden):** `rhel-9.6-x86_64-golden.qcow2` is pre-configured for Kloudust (cloud-init, QEMU guest agent and SELinux policy for IP assignment) and generalized, so every VM gets its own identity. Use a disk size of at least 10 GB, and if you supply custom cloud-init data, set `fqdn` along with `hostname`.
 
 ## Repository
 

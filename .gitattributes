@@ -9,3 +9,4 @@ ubuntu_20_04_amd_64.img filter=lfs diff=lfs merge=lfs -text
 ubuntu_22_04_amd_64.img filter=lfs diff=lfs merge=lfs -text
 ubuntu_24_04_amd_64.img filter=lfs diff=lfs merge=lfs -text
 oracle_linux_8.10-x86_64-kvm.qcow2 filter=lfs diff=lfs merge=lfs -text
+rhel-9.6-x86_64-golden.qcow2 filter=lfs diff=lfs merge=lfs -text

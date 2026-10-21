@@ -4,7 +4,7 @@ Pre-built QCOW2 disk images for creating virtual machines in Kloudust.
 
 ## Overview
 
-The [guest-images](https://github.com/TekMonksTeam/guest-images) repository provides ready-to-use QCOW2 images of Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES).
+The [guest-images](https://github.com/TekMonksTeam/guest-images) repository provides ready-to-use QCOW2 images of Red Hat Enterprise Linux (RHEL), CentOS Stream and SUSE Linux Enterprise Server (SLES).
 
 The primary objective of this repository is to make these images easily accessible so that users can download them, upload them to Kloudust, and create and run virtual machines without having to install the operating system from scratch.
 
@@ -16,6 +16,7 @@ The primary objective of this repository is to make these images easily accessib
 | Red Hat Enterprise Linux | RHEL 9.6 | QCOW2 | `rhel9.6` |
 | Red Hat Enterprise Linux | RHEL 9.6 (Kloudust golden) | QCOW2 | `rhel9.6` |
 | Red Hat Enterprise Linux | RHEL 8.10 | QCOW2 | `rhel8.10` |
+| CentOS Stream | CentOS Stream 9 (Kloudust golden) | QCOW2 | `centos-stream9` |
 | SUSE Linux Enterprise Server | SLES 15 SP5 | QCOW2 | `opensuse15.5` |
 | SUSE Linux Enterprise Server | SLES 15 SP6 | QCOW2 | `opensuse15.6` |
 | SUSE Linux Enterprise Server | SLES 12 SP4 | QCOW2 | `opensuse42.3/sles12sp4` |
@@ -39,6 +40,7 @@ The OS variant identifies the guest operating system and version to the virtuali
 - RHEL 9.6 → `rhel9.6`
 - RHEL 9.6 (Kloudust golden) → `rhel9.6`
 - RHEL 8.10 → `rhel8.10`
+- CentOS Stream 9 (Kloudust golden) → `centos-stream9`
 - SLES 15 SP5 → `opensuse15.5`
 - SLES 15 SP6 → `opensuse15.6`
 - SLES 12 SP4 → `opensuse42.3/sles12sp4`
@@ -174,6 +176,8 @@ Once you have downloaded the required QCOW2 image, follow these steps to create 
 - **👤 Creating Your VM User:** Once your VM is running, follow the guest OS setup process to create your own username and password. Your Red Hat or SUSE account is used for vendor services and subscriptions; it does not automatically become your VM's login account.
 
 - **🖥️ RHEL 9.6 (Kloudust golden):** `rhel-9.6-x86_64-golden.qcow2` is pre-configured for Kloudust (cloud-init, QEMU guest agent and SELinux policy for IP assignment) and generalized, so every VM gets its own identity. Use a disk size of at least 10 GB, and if you supply custom cloud-init data, set `fqdn` along with `hostname`.
+
+- **🖥️ CentOS Stream 9 (Kloudust golden):** `centos-9-x86_64-golden.qcow2` is pre-configured for Kloudust (cloud-init, QEMU guest agent and SELinux policy for IP assignment) and generalized, so every VM gets its own identity. No vendor account is needed. If you supply custom cloud-init data, set `fqdn` along with `hostname`.
 
 ## Repository
 
